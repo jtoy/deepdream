@@ -1,0 +1,27 @@
+[General]
+git = https://github.com/jtoy/deepdream
+name = Clone of google deepdream repo with support for somatic via experimentfile
+author = somebody@someplace.org
+
+
+[FetchData]
+url = http://my.storage.net/projects/bigdatasets/flikr32k.zip
+command = ls -l
+workspace = /home/ubuntu/deepdream/somatic/data
+
+[Initialize]
+command = locate deepdream
+workspace = /home/ubuntu/deepdream/somatic/workspaces/initialize
+
+[Train]
+command = ps
+workspace = /home/ubuntu/deepdream/somatic/workspaces/train
+
+[Test]
+command = echo this is a test
+workspace = /home/ubuntu/deepdream/somatic/workspaces/test
+
+[AWSOptions]
+shutdown_after_run = true
+something_else = false
+
